@@ -1,0 +1,38 @@
+module.exports = [
+  {
+    id: 1,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "I used to pay for lots of different software for my SEO business and customer reporting. Search Atlas made this much easier and more affordable for me.",
+    author: "Lisa Parziale",
+    location: "Claifornia",
+    image: "/images/media/img_54.jpg",
+  },
+  {
+    id: 2,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "Search Atlas Boosted Our Organic Lead Traffic by 110% in just 90 Days! It saves us money, time, and performance.",
+    author: "Clayton Joyner",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },
+  {
+    id: 3,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "Search Atlas just blows other tools out of the water. Tools like Ahrefs and Jasper have gone up in price quite a bit and just haven’t kept up. Search Atlas replaces both of them.",
+    author: "Josh Blakeley",
+    location: "Claifornia",
+    image: "/images/media/img_54.jpg",
+  },
+  {
+    id: 4,
+    title: "Very Solid!!",
+    rating: 5,
+    text: "We were using many different tools to accomplish what we can do in Search Atlas.",
+    author: "Shannon Donovan",
+    location: "Claifornia",
+    image: "/images/media/img_55.jpg",
+  },
+];
