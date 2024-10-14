@@ -1,12 +1,24 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';  // Use next/navigation for App Router in Next.js 13+
 
 import Image1 from "../../../public/images/assets/ils_11.png";
 import Image2 from "../../../public/images/assets/ils_12.png";
 
 const Hero1 = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  let router;
+
+  // Ensure useRouter is only called on the client side
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (typeof window !== "undefined") {
+    router = useRouter();  // Only call useRouter when window is available (client-side)
+  }
+
   const options = [
     { value: 0, display: "Select insurance type.." },
     { value: 1, display: "Life Insurance" },
@@ -17,8 +29,13 @@ const Hero1 = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // handle form submission
+    
+    // Ensure the router is available before redirecting
+    if (isMounted && router) {
+      router.push('/pages-menu/pricing/');
+    }
   };
+
 
   return (
     <div className="hero-banner-ten position-relative zn2">
